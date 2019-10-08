@@ -25,11 +25,10 @@ SECRET_KEY = 'h*y1=^1@#untut2ya645um@+&d!&@(dt!i=6ps+fq4!olp5y1a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = '*'
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -102,6 +101,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+GRAPHENE = {
+    'SCHEMA': 'pythongraphql.schema.schema'
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
